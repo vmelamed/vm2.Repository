@@ -67,7 +67,6 @@ env:
   # *TODO* The benchmark project(s) to build and run. Must be a JSON array of strings containing path(s) to the buildable and runnable benchmark project(s).
   BENCHMARK_PROJECTS: >-
     [
-    "benchmarks/Repository.Benchmarks/Repository.Benchmarks.csproj"
     ]
   # If not specified or empty, no projects will be packed for NuGet validation during CI.
   # *TODO* The project(s) to pack for NuGet validation during CI. Must be a JSON array of strings containing path(s) to the packable project(s).
