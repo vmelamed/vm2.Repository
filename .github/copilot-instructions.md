@@ -1,6 +1,7 @@
 # Copilot Instructions for vm2.Repository
 
 <!-- <<<=== begin shared content -->
+
 ## Shared Conventions
 
 Copilot MUST read and follow [CONVENTIONS.md](CONVENTIONS.md)
