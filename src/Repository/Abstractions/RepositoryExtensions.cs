@@ -1,4 +1,4 @@
-﻿// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 // Copyright (c) 2025-2026 Val Melamed
 
 namespace vm2.Repository.Abstractions;
@@ -34,7 +34,7 @@ public static class RepositoryExtensions
             ct = keyValues[^1];
             keyValues = keyValues[..^1];
         }
-        
+
         return repository.FindAsync<T>(keyValues, ct);
     }
 
