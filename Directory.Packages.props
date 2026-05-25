@@ -12,7 +12,7 @@
         <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="10.0.8" />
         <PackageVersion Include="Microsoft.Extensions.Logging.Configuration" Version="10.0.8" />
         <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.8" />
-        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.7" />
+        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.8" />
         <PackageVersion Include="Microsoft.Extensions.Logging" Version="10.0.8" />
         <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.8" />
         <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="10.0.8" />
@@ -30,7 +30,7 @@
         <PackageVersion Include="xunit.v3.mtp-v2" Version="3.2.2" />
         <PackageVersion Include="xunit.v3.extensibility.core" Version="3.2.2" />
         <PackageVersion Include="xunit.v3.runner.inproc" Version="3.2.2" />
-        <PackageVersion Include="vm2.TestUtilities" Version="1.4.6" />
+        <PackageVersion Include="vm2.TestUtilities" Version="1.5.1" />
         <!-- Benchmarking packages: -->
         <!-- for running with Visual Studio profiler:<PackageVersion Include="Microsoft.VisualStudio.DiagnosticsHub.BenchmarkDotNetDiagnosers" Version="18.0.36421.1" />-->
         <PackageVersion Include="BenchmarkDotNet" Version="0.15.8" />
