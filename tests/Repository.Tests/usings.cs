@@ -2,6 +2,8 @@
 
 global using Microsoft.EntityFrameworkCore;
 
+global using Microsoft.EntityFrameworkCore;
+
 global using Xunit.Abstractions;
 
 global using static vm2.TestUtilities.TestUtilities;
