@@ -15,26 +15,26 @@ A starter vm2 package scaffold. Customize the code, tests, benchmarks, docs, and
   - from **CLI**, if it is not built yet (builds on MTP v2):
 
     ```bash
-    dotnet run --project test/Repository.Tests/Repository.Tests.csproj`
+    dotnet run --project tests/Repository.Tests/Repository.Tests.csproj`
     ```
 
   - from **CLI**, if it is already built in **CLI** or **VSCode** (MTP v2):
     - any OS or shell:
 
       ```bash
-      dotnet test test/Repository.Tests/bin/Debug/net10.0/Repository.Tests.dll`
+      dotnet test tests/Repository.Tests/bin/Debug/net10.0/Repository.Tests.dll`
       ```
 
     - on Windows **CLI** (already built in **CLI** or **VSCode** - on MTP v2):
 
       ```batch
-      test/Repository.Tests/bin/Debug/net10.0/Repository.Tests.exe`
+      tests/Repository.Tests/bin/Debug/net10.0/Repository.Tests.exe`
       ```
 
     - on Linux or MacOS **CLI** (already built in **CLI** or **VSCode** - on MTP v2):
 
       ```bash
-      test/Repository.Tests/bin/Debug/net10.0/Repository.Tests`
+      tests/Repository.Tests/bin/Debug/net10.0/Repository.Tests`
       ```
 
   - from Visual Studio:
@@ -66,7 +66,7 @@ A starter vm2 package scaffold. Customize the code, tests, benchmarks, docs, and
 
 - .github/workflows: CI, prerelease, release, clear-cache.
 - src/Repository: the library source code
-- test/Repository.Tests: xUnit + MTP tests, includes testconfig.json
+- tests/Repository.Tests: xUnit + MTP tests, includes testconfig.json
 - benchmarks/Repository.Benchmarks: BenchmarkDotNet suite (optional)
 - examples/Repository.Example: minimal console sample (optional)
 - docs/: documentation starter (optional)

@@ -28,33 +28,20 @@
         <PackageVersion Include="xunit.v3.mtp-v2" Version="3.2.2" />
         <PackageVersion Include="xunit.v3.extensibility.core" Version="3.2.2" />
         <PackageVersion Include="xunit.v3.runner.inproc" Version="3.2.2" />
-        <PackageVersion Include="vm2.TestUtilities" Version="1.5.2" />
+        <PackageVersion Include="FluentAssertions" Version="8.10.0" />
+        <PackageVersion Include="NSubstitute" Version="5.3.0" />
+        <PackageVersion Include="vm2.TestUtilities" Version="2.0.1" />
         <!-- Benchmarking packages: -->
         <!-- for running with Visual Studio profiler:<PackageVersion Include="Microsoft.VisualStudio.DiagnosticsHub.BenchmarkDotNetDiagnosers" Version="18.0.36421.1" />-->
         <PackageVersion Include="BenchmarkDotNet" Version="0.15.8" />
         <PackageVersion Include="BenchmarkDotNet.Annotations" Version="0.15.8" />
+
         <!-- Add repo-specific packages below this line: -->
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.8" />
-        <PackageVersion Include="Microsoft.Data.Sqlite.Core" Version="10.0.8" />
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.8" />
+
         <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.8" />
         <PackageVersion Include="Microsoft.EntityFrameworkCore.Abstractions" Version="10.0.8" />
-        <PackageVersion Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.8" />
-        <!-- <PackageVersion Include="Microsoft.EntityFrameworkCore.Analyzers" Version="?.?.?" /> -->
-        <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="10.0.8" />
-        <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.8" />
-        <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.8">
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-            <PrivateAssets>all</PrivateAssets>
-        </PackageVersion>
-        <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.8" />
-        <PackageVersion Include="OpenTelemetry" Version="1.15.3" />
-        <PackageVersion Include="OpenTelemetry.Exporter.Console" Version="1.15.3" />
-        <PackageVersion Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.15.3" />
-        <PackageVersion Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.15.1-beta.1" />
         <PackageVersion Include="FluentValidation" Version="12.1.1" />
-        <PackageVersion Include="JsonSchema.Net" Version="9.2.1" Condition="$([System.Text.RegularExpressions.Regex]::IsMatch($(DefineConstants), '^(.*;)*JSON_SCHEMA(;.*)*$'))" />
-        <PackageVersion Include="Newtonsoft.Json.Schema" Version="4.0.1" Condition="!$([System.Text.RegularExpressions.Regex]::IsMatch($(DefineConstants), '^(.*;)*JSON_SCHEMA(;.*)*$'))" />
-        <PackageVersion Include="LibGit2Sharp" Version="0.31.0" />
-        <PackageVersion Include="SQLitePCLRaw.bundle_e_sqlcipher" Version="2.1.11" />
     </ItemGroup>
 </Project>

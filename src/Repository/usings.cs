@@ -19,6 +19,7 @@ global using Microsoft.EntityFrameworkCore.Infrastructure;
 global using Microsoft.EntityFrameworkCore.Metadata.Builders;
 global using Microsoft.EntityFrameworkCore.Query;
 global using Microsoft.EntityFrameworkCore.ValueGeneration;
+
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
 
@@ -29,3 +30,4 @@ global using vm2.Common.Abstractions;
 global using vm2.Repository.Abstractions;
 global using vm2.Repository.EntityFramework.Models;
 
+global using static System.NullReferenceException;

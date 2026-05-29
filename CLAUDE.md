@@ -52,7 +52,7 @@ Key design decisions:
   │       ├── Repository.csproj
   │       ├── Repository.Api.cs
   │       └── usings.cs
-  ├── test/                     # Test projects (highly recommended)
+  ├── tests/                    # Test projects (highly recommended)
   │   └── vm2.<name>.Tests/
   │       ├── Repository.Tests.csproj
   │       ├── RepositoryApiTests.cs
@@ -82,10 +82,10 @@ Key design decisions:
 dotnet build vm2.Repository.slnx
 
 # Run all tests (MTP v2 — each project is a compiled executable)
-dotnet test --project test/Repository.Tests/Repository.Tests.csproj
+dotnet test --project tests/Repository.Tests/Repository.Tests.csproj
 
 # Run a single test by name (MTP v2 filter syntax)
-dotnet test --project test/Repository.Tests/Repository.Tests.csproj --filter "MethodName_WhenCondition_ShouldOutcome"
+dotnet test --project tests/Repository.Tests/Repository.Tests.csproj --filter "MethodName_WhenCondition_ShouldOutcome"
 
 # Pack NuGet package
 dotnet pack vm2.Repository.slnx --configuration Release

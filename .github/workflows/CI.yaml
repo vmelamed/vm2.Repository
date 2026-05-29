@@ -56,7 +56,7 @@ env:
     ]
   TEST_PROJECTS: >-
     [
-    "test/Repository.Tests/Repository.Tests.csproj"
+    "tests/Repository.Tests/Repository.Tests.csproj"
     ]
   BENCHMARK_PROJECTS: >-
     [

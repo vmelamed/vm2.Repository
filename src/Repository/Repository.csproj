@@ -2,6 +2,8 @@
 
     <PropertyGroup>
         <RootNamespace>vm2.Repository</RootNamespace>
+        <PublishAot>true</PublishAot>
+        <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.EntityFrameworkCore.GeneratedInterceptors</InterceptorsNamespaces>
     </PropertyGroup>
 
     <PropertyGroup Label="NuGet">

@@ -42,7 +42,7 @@
     <Folder Name="/src/">
         <Project Path="src/Repository/Repository.csproj" />
     </Folder>
-    <Folder Name="/test/">
-        <Project Path="test/Repository.Tests/Repository.Tests.csproj" />
+    <Folder Name="/tests/">
+        <Project Path="tests/Repository.Tests/Repository.Tests.csproj" />
     </Folder>
 </Solution>
