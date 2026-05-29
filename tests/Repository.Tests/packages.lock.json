@@ -175,6 +175,12 @@
                     "Microsoft.Extensions.Primitives": "10.0.8"
                 }
             },
+            "Microsoft.NET.ILLink.Tasks": {
+                "type": "Direct",
+                "requested": "[10.0.8, )",
+                "resolved": "10.0.8",
+                "contentHash": "dVbSXGIFNR5nZcv2tOLoWI+a9T4jtFd77IYjuND+QVe360qWgAF7H0WtoopYhRw/+SgpGUTyrkrh+65+ClNnfw=="
+            },
             "Microsoft.SourceLink.GitHub": {
                 "type": "Direct",
                 "requested": "[10.0.300, )",
@@ -188,13 +194,13 @@
             },
             "Microsoft.Testing.Extensions.CodeCoverage": {
                 "type": "Direct",
-                "requested": "[18.8.0, )",
-                "resolved": "18.8.0",
-                "contentHash": "euA4tpkGAkfHznVQrPzXFLNaUhcRCIKPkDmJJB+A2XU9d5ymHLhQ2Do0fGc/Z2y+VFUaNnM6vHhIrb4FW+qhtg==",
+                "requested": "[18.7.0, )",
+                "resolved": "18.7.0",
+                "contentHash": "i7ifcFK6lzM5BHaROS4O7SAkk7L/gAeOwZxs3pyhn8hW73ZDTwQppovXNJL1bm1JBXL69HuI4DO5NzU8rhzIiA==",
                 "dependencies": {
-                    "Microsoft.DiaSymReader": "2.2.3",
+                    "Microsoft.DiaSymReader": "2.2.6",
                     "Microsoft.Extensions.DependencyModel": "8.0.2",
-                    "Microsoft.Testing.Platform": "2.2.3"
+                    "Microsoft.Testing.Platform": "2.2.1"
                 }
             },
             "Microsoft.Testing.Extensions.TrxReport": {
@@ -234,12 +240,22 @@
             },
             "vm2.TestUtilities": {
                 "type": "Direct",
-                "requested": "[2.1.1, )",
-                "resolved": "2.1.1",
-                "contentHash": "30s+vCk9vGJA2wVrMMcBXNye56vYgWbzEYLolKNGMc3GB61wvCMrS+ZM8W5enqrYXxwusvWq9Ygw7pZF6VfKdA==",
+                "requested": "[1.5.2, )",
+                "resolved": "1.5.2",
+                "contentHash": "fWDZmLd0AgAFagsqKt1A4L1r5vcKXFXpMSh9CNjji4tzG289+AnQfcP8UPUdTg3ivIDweF5jScjPcIBzr1pOoQ==",
                 "dependencies": {
                     "FluentAssertions": "8.10.0",
+                    "Microsoft.Extensions.Configuration.Binder": "10.0.8",
+                    "Microsoft.Extensions.Configuration.CommandLine": "10.0.8",
+                    "Microsoft.Extensions.Configuration.EnvironmentVariables": "10.0.8",
+                    "Microsoft.Extensions.Configuration.Json": "10.0.8",
+                    "Microsoft.Extensions.DependencyInjection": "10.0.8",
+                    "Microsoft.Extensions.Logging": "10.0.8",
                     "Microsoft.Extensions.Logging.Abstractions": "10.0.8",
+                    "Microsoft.Extensions.Logging.Configuration": "10.0.8",
+                    "Microsoft.Extensions.Logging.Console": "10.0.8",
+                    "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.8",
+                    "System.Configuration.ConfigurationManager": "10.0.8",
                     "xunit.v3.extensibility.core": "3.2.2"
                 }
             },
@@ -282,8 +298,8 @@
             },
             "Microsoft.DiaSymReader": {
                 "type": "Transitive",
-                "resolved": "2.2.3",
-                "contentHash": "bhwzJfzyiJM0nXJyNB7Y9OfsEXyxLdDBHG99soIp5JjnPydwkOaBdRCtRtWgQh3noSLi2cSIZ/wpbHNNE9knxQ=="
+                "resolved": "2.2.6",
+                "contentHash": "UitZ43WYJQYmcuScLEDTR95EGulBwk2R4N2zLBhaka8frXGVioa6Bkcbc5Fib8UkHIdrnN1lyzOublenrfpgxA=="
             },
             "Microsoft.EntityFrameworkCore.Analyzers": {
                 "type": "Transitive",
