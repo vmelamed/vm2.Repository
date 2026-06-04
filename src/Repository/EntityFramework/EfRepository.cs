@@ -3,6 +3,8 @@
 
 namespace vm2.Repository.EntityFramework;
 
+using System.Diagnostics.CodeAnalysis;
+
 /// <summary>
 /// The class <see cref="EfRepository"/> is <see cref="DbContext"/> that implements explicitly <see cref="IRepository"/>.
 /// </summary>
@@ -14,7 +16,7 @@ namespace vm2.Repository.EntityFramework;
 /// <see cref="IRepository"/> does not claim, nor tries to cover the full functionality of <see cref="DbContext"/>. To access
 /// the full functionality of <see cref="DbContext"/>, you can use the extension method <see cref="EfRepositoryExtensions.DbContext"/>.
 /// </remarks>
-public partial class EfRepository : DbContext, IRepository
+public class EfRepository : DbContext, IRepository
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="EfRepository"/> class.
