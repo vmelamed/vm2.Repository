@@ -1,5 +1,7 @@
 ﻿namespace vm2.Repository.EntityFramework;
 
+using System.Diagnostics.CodeAnalysis;
+
 /// <summary>
 /// The class <see cref="EfRepository"/> is <see cref="DbContext"/> that implements explicitly <see cref="IRepository"/>.
 /// </summary>
@@ -11,10 +13,8 @@
 /// <see cref="IRepository"/> does not claim, nor tries to cover the full functionality of <see cref="DbContext"/>. To access
 /// the full functionality of <see cref="DbContext"/>, you can use the extension method <see cref="EfRepositoryExtensions.DbContext"/>.
 /// </remarks>
-public partial class EfRepository : DbContext, IRepository
+public class EfRepository : DbContext, IRepository
 {
-    IRepository ThisRepo => this;
-
     /// <summary>
     /// Initializes a new instance of the <see cref="EfRepository"/> class using the specified options.
     /// </summary>
@@ -50,10 +50,10 @@ public partial class EfRepository : DbContext, IRepository
     /// <param name="ct">Can be used by other objects or threads to receive notice of cancellation.</param>
     /// <returns><see cref="Task{T}"/> which contains the found instance or <see langword="null"/> if not found.</returns>
     /// <remarks>Note that the method is asynchronous.</remarks>
-    public ValueTask<T?> FindAsync<T>(
+    ValueTask<T?> IRepository.FindAsync<T>(
         IEnumerable<object?>? keyValues,
-        CancellationToken ct = default) where T : class
-        => ThisRepo.Set<T>().FindAsync(keyValues, ct);
+        CancellationToken ct) where T : class
+        => base.Set<T>().FindAsync(keyValues?.ToArray(), ct);
 
     /// <summary>
     /// Adds the <paramref name="entity"/> to the change-tracker (in memory) in <see cref="EntityState.Added"/> state.
@@ -70,7 +70,7 @@ public partial class EfRepository : DbContext, IRepository
     async ValueTask<T> IRepository.AddAsync<T>(
         T entity,
         CancellationToken ct) where T : class
-        => await ThisRepo.Set<T>().AddAsync(entity, ct).ConfigureAwait(false);
+        => (await base.AddAsync(entity, ct).ConfigureAwait(false)).Entity;
 
     /// <summary>
     /// Attaches the specified entity to the internal object change-tracker in a <see cref="EntityState.Modified"/> state.
@@ -86,7 +86,7 @@ public partial class EfRepository : DbContext, IRepository
     /// <param name="entity">The modified entity instance.</param>
     /// <returns>The added entity.</returns>
     T IRepository.Update<T>(T entity)
-        => ThisRepo.Set<T>().Update(entity);
+        => base.Set<T>().Update(entity).Entity;
 
     /// <summary>
     /// If the <paramref name="entity"/> is not in the tracker yet, the method will add it in <see cref="EntityState.Deleted"/> state.<br/>
@@ -111,7 +111,7 @@ public partial class EfRepository : DbContext, IRepository
     /// ]]></code>
     /// </remarks>
     T IRepository.Remove<T>(T entity)
-        => ThisRepo.Set<T>().Remove(entity);
+        => base.Set<T>().Remove(entity).Entity;
 
     /// <summary>
     /// Attaches the specified entity to the change-tracker in a <see cref="EntityState.Unchanged"/> state. If any changes are done to the entity, its<br/>
@@ -127,7 +127,7 @@ public partial class EfRepository : DbContext, IRepository
     /// <param name="entity">The entity to be attached.</param>
     /// <returns>The entity.</returns>
     T IRepository.Attach<T>(T entity)
-        => ThisRepo.Set<T>().Attach(entity);
+        => base.Set<T>().Attach(entity).Entity;
 
     /// <summary>
     /// Commits the added, modified and deleted entities in the change-tracker to the physical store invoking the respective <br/>
@@ -136,6 +136,18 @@ public partial class EfRepository : DbContext, IRepository
     /// <param name="ct">Can be used by other objects or threads to receive notice of cancellation.</param>
     /// <returns><see cref="Task"/></returns>
     /// <remarks>Note that the method is asynchronous.</remarks>
-    public async Task<int> CommitAsync(CancellationToken ct = default)
+    async Task<int> IRepository.CommitAsync(CancellationToken ct)
         => await SaveChangesAsync(ct).ConfigureAwait(false);
+
+    /////////////////////////////////////////////////
+
+    /// <summary>
+    /// Shortcut method to throw <see cref="NotSupportedException"/> for the synchronous methods of the repository.
+    /// The message of the exception will contain the name of the asynchronous method that should be used instead.
+    /// </summary>
+    /// <param name="asyncMethodName"></param>
+    /// <exception cref="NotSupportedException"></exception>
+    [DoesNotReturn]
+    protected void SyncNotImplemented<T>(string asyncMethodName)
+        => throw new NotSupportedException($"The repository does not support synchronous methods. Use {asyncMethodName} instead.");
 }

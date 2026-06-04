@@ -175,12 +175,6 @@
           "Microsoft.Extensions.Primitives": "10.0.8"
         }
       },
-      "Microsoft.NET.ILLink.Tasks": {
-        "type": "Direct",
-        "requested": "[10.0.8, )",
-        "resolved": "10.0.8",
-        "contentHash": "dVbSXGIFNR5nZcv2tOLoWI+a9T4jtFd77IYjuND+QVe360qWgAF7H0WtoopYhRw/+SgpGUTyrkrh+65+ClNnfw=="
-      },
       "Microsoft.SourceLink.GitHub": {
         "type": "Direct",
         "requested": "[10.0.300, )",
@@ -240,22 +234,12 @@
       },
       "vm2.TestUtilities": {
         "type": "Direct",
-        "requested": "[1.5.2, )",
-        "resolved": "1.5.2",
-        "contentHash": "fWDZmLd0AgAFagsqKt1A4L1r5vcKXFXpMSh9CNjji4tzG289+AnQfcP8UPUdTg3ivIDweF5jScjPcIBzr1pOoQ==",
+        "requested": "[2.0.2, )",
+        "resolved": "2.0.2",
+        "contentHash": "yjulWlMvLnbGPnXe2BUOmiYaOPnoxeeRuKgsSLXL3cxOa1/GX4HnRUBtfEyBYbO0kzdolGLN3dm/ENIwNnFGpw==",
         "dependencies": {
           "FluentAssertions": "8.10.0",
-          "Microsoft.Extensions.Configuration.Binder": "10.0.8",
-          "Microsoft.Extensions.Configuration.CommandLine": "10.0.8",
-          "Microsoft.Extensions.Configuration.EnvironmentVariables": "10.0.8",
-          "Microsoft.Extensions.Configuration.Json": "10.0.8",
-          "Microsoft.Extensions.DependencyInjection": "10.0.8",
-          "Microsoft.Extensions.Logging": "10.0.8",
           "Microsoft.Extensions.Logging.Abstractions": "10.0.8",
-          "Microsoft.Extensions.Logging.Configuration": "10.0.8",
-          "Microsoft.Extensions.Logging.Console": "10.0.8",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.8",
-          "System.Configuration.ConfigurationManager": "10.0.8",
           "xunit.v3.extensibility.core": "3.2.2"
         }
       },

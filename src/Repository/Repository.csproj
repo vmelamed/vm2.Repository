@@ -2,7 +2,13 @@
 
     <PropertyGroup>
         <RootNamespace>vm2.Repository</RootNamespace>
-        <PublishAot>true</PublishAot>
+
+        <IsAotCompatible>false</IsAotCompatible>
+        <VerifyReferenceAotCompatibility>false</VerifyReferenceAotCompatibility>
+
+        <EnableTrimAnalyzer>false</EnableTrimAnalyzer>
+        <IsTrimmable>false</IsTrimmable>
+
         <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.EntityFrameworkCore.GeneratedInterceptors</InterceptorsNamespaces>
     </PropertyGroup>
 
