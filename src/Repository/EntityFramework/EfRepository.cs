@@ -5,6 +5,8 @@ namespace vm2.Repository.EntityFramework;
 
 using System.Diagnostics.CodeAnalysis;
 
+using System.Diagnostics.CodeAnalysis;
+
 /// <summary>
 /// The class <see cref="EfRepository"/> is <see cref="DbContext"/> that implements explicitly <see cref="IRepository"/>.
 /// </summary>

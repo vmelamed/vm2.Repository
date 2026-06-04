@@ -12,7 +12,7 @@
                     "Microsoft.Extensions.Configuration.Abstractions": "10.0.9"
                 }
             },
-            "Microsoft.Extensions.Configuration.CommandLine": {
+            "Microsoft.EntityFrameworkCore.Abstractions": {
                 "type": "Direct",
                 "requested": "[10.0.9, )",
                 "resolved": "10.0.9",
@@ -184,6 +184,23 @@
                 "contentHash": "P0kaQwVZx4xIUe2FtrLyBadYNXuAljttJUPvjBYRuHhPE8L77L42KakLDkaADRiUrGspoLcMwayjrbQhYTr0zA==",
                 "dependencies": {
                     "System.IO.Hashing": "10.0.8"
+                }
+            },
+            "Microsoft.Extensions.Configuration": {
+                "type": "Transitive",
+                "resolved": "10.0.9",
+                "contentHash": "woZsWLhOQsASuxbmgiZJqiGUBNo3IjRdXC92xt8rRokza+P6/nIsnzq7sm9Or6ZYcRl2kL1ufj8HVzp1QlPTXw==",
+                "dependencies": {
+                    "Microsoft.Extensions.Configuration.Abstractions": "10.0.9",
+                    "Microsoft.Extensions.Primitives": "10.0.9"
+                }
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+                "type": "Transitive",
+                "resolved": "10.0.9",
+                "contentHash": "qGhRPd3VxfLV9UqatVOiD9mAeUbj2KiMwGFYC5uXlzExiZQoe4X/hdmzGIU7BQjNLTqCnnbTHVyBglG3668/HA==",
+                "dependencies": {
+                    "Microsoft.Extensions.Primitives": "10.0.9"
                 }
             },
             "Microsoft.Extensions.Configuration": {
