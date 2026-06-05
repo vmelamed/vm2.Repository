@@ -1,4 +1,7 @@
-﻿namespace vm2.Repository.EntityFramework;
+﻿// SPDX-License-Identifier: MIT
+// Copyright (c) 2025-2026 Val Melamed
+
+namespace vm2.Repository.EntityFramework;
 
 using System.Diagnostics.CodeAnalysis;
 
@@ -150,4 +153,4 @@ public class EfRepository : DbContext, IRepository
     [DoesNotReturn]
     protected void SyncNotImplemented<T>(string asyncMethodName)
         => throw new NotSupportedException($"The repository does not support synchronous methods. Use {asyncMethodName} instead.");
-}
+}

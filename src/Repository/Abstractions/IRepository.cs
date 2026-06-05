@@ -1,4 +1,7 @@
-﻿namespace vm2.Repository.Abstractions;
+﻿// SPDX-License-Identifier: MIT
+// Copyright (c) 2025-2026 Val Melamed
+
+namespace vm2.Repository.Abstractions;
 
 /// <summary>
 /// Represents the behavior of abstract objects that implement the popular repository pattern the way it was meant by <br/>

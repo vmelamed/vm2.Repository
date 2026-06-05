@@ -1,4 +1,7 @@
-﻿namespace vm2.Repository.EntityFramework;
+﻿// SPDX-License-Identifier: MIT
+// Copyright (c) 2025-2026 Val Melamed
+
+namespace vm2.Repository.EntityFramework;
 
 /// <summary>
 /// Provides extension methods to <see cref="IRepository"/> that are typical for <see cref="DbContext"/>.
