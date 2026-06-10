@@ -10,9 +10,6 @@
         <File Path=".github/workflows/Prerelease.yaml" />
         <File Path=".github/workflows/Release.yaml" />
     </Folder>
-    <Folder Name="/benchmarks/">
-        <Project Path="benchmarks/Repository.Benchmarks/Repository.Benchmarks.csproj" />
-    </Folder>
     <Folder Name="/changelog/">
         <File Path="changelog/cliff.prerelease.toml" />
         <File Path="changelog/cliff.release-header.toml" />
