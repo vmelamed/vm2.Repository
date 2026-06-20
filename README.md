@@ -75,7 +75,7 @@ A starter vm2 package scaffold. Customize the code, tests, benchmarks, docs, and
 
 ## Next steps
 
-- create GitHub repository using the generated bootstrap script: `scripts/repo-setup.sh`
+- create GitHub repository using the generated bootstrap script: `scripts/setup-repo.sh`
 - Update README, CHANGELOG, and package metadata.
 - Set secrets and variables for workflows:
   - Set required secrets in the new GitHub repo:

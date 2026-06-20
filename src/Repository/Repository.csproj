@@ -3,11 +3,10 @@
     <PropertyGroup>
         <RootNamespace>vm2.Repository</RootNamespace>
 
-        <IsAotCompatible>false</IsAotCompatible>
-        <VerifyReferenceAotCompatibility>false</VerifyReferenceAotCompatibility>
-
-        <EnableTrimAnalyzer>false</EnableTrimAnalyzer>
         <IsTrimmable>false</IsTrimmable>
+        <IsAotCompatible>false</IsAotCompatible>
+        <EnableTrimAnalyzer>false</EnableTrimAnalyzer>
+        <VerifyReferenceAotCompatibility>false</VerifyReferenceAotCompatibility>
 
         <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.EntityFrameworkCore.GeneratedInterceptors</InterceptorsNamespaces>
     </PropertyGroup>
